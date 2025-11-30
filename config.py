@@ -1,44 +1,28 @@
-"""
-from os import getenv
-
-
-API_ID = int(getenv("API_ID", "21567814"))
-API_HASH = getenv("API_HASH", "cd7dc5431d449fd795683c550d7bfb7e)
-BOT_TOKEN = getenv("BOT_TOKEN", "7476223017:AAH_cznAsOGtqPhlZATwryCxT0uCpbHFJgo")
-OWNER_ID = int(getenv("OWNER_ID", "6126688051"))
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6126688051 6039166844").split()))
-MONGO_URL = getenv("MONGO_DB", "mongodb+srv://daxxop:daxxop@daxxop.dg3umlc.mongodb.net/?retryWrites=true&w=majority")
-
-CHANNEL_ID = int(getenv("CHANNEL_ID", "-1002788873966"))
-PREMIUM_LOGS = int(getenv("PREMIUM_LOGS", "-1002788873966"))
-
-"""
-#
-
-
-
-
-# --------------M----------------------------------
-
 import os
 from os import getenv
-# ---------------R---------------------------------
-API_ID = int(os.environ.get("API_ID"))
-# ------------------------------------------------
-API_HASH = os.environ.get("API_HASH")
-# ----------------D--------------------------------
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-# -----------------A-------------------------------
-BOT_USERNAME = os.environ.get("BOT_USERNAME")
-# ------------------X------------------------------
-OWNER_ID = int(os.environ.get("OWNER_ID"))
-# ------------------X------------------------------
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5840594311 7621154046 7793979196 5798579221").split()))
-# ------------------------------------------------
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
-# ------------------------------------------------
-MONGO_URL = os.environ.get("MONGO_URL")
-# -----------------------------------------------
-PREMIUM_LOGS = int(os.environ.get("PREMIUM_LOGS"))
+# ------------------ Configuration ------------------
 
+# Required variables
+API_ID = int(os.environ.get("API_ID", "27400172"))
+API_HASH = os.environ.get("API_HASH", "56d0a75c5f9a9de6beb5452aa63c2d36")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8204209080:AAHQx2wvrV1yrLoJgrxswYgLBf_mkzXqKHQ")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", None)  # Optional, can be None
+OWNER_ID = int(os.environ.get("OWNER_ID", "7540570087"))
+
+# Optional variables with defaults
+SUDO_USERS = list(map(int, os.environ.get("SUDO_USERS", "7540570087 7463601722").split()))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003414109205"))
+PREMIUM_LOGS = int(os.environ.get("PREMIUM_LOGS", "-1003414109205"))
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://greenhornet63603:CvnxnjzknPLxYOfo@cluster0.qif4g18.mongodb.net/?appName=Cluster0")
+
+# ------------------ Debugging ------------------
+# Uncomment to check values
+# print("API_ID:", API_ID)
+# print("API_HASH:", API_HASH)
+# print("BOT_TOKEN:", BOT_TOKEN)
+# print("OWNER_ID:", OWNER_ID)
+# print("SUDO_USERS:", SUDO_USERS)
+# print("CHANNEL_ID:", CHANNEL_ID)
+# print("PREMIUM_LOGS:", PREMIUM_LOGS)
+# print("MONGO_URL:", MONGO_URL)
